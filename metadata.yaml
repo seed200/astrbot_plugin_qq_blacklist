@@ -1,0 +1,14 @@
+name: "astrbot_plugin_qq_blacklist"
+display_name: "QQ 黑名单 / 限流"
+desc: "支持永久屏蔽、每小时限流，并可防止多机器人互刷导致的无限对话。"
+version: "v1.1.0"
+author: "seed200"
+repo: "https://github.com/seed200/astrbot_plugin_qq_blacklist"
+astrbot_version: ">=4.24.0"
+support_platforms:
+  - aiocqhttp
+tags:
+  - 黑名单
+  - 限流
+  - 管理
+  - QQ

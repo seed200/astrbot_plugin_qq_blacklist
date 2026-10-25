@@ -1,0 +1,37 @@
+{
+  "enabled": {
+    "description": "启用黑名单",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后永久屏蔽和间歇屏蔽全部失效。"
+  },
+  "permanent_blacklist": {
+    "description": "永久屏蔽 QQ 号",
+    "type": "list",
+    "items": {
+      "type": "string"
+    },
+    "default": [],
+    "hint": "每行一个 QQ 号，只填数字。这个列表里的人永远不会触发机器人。"
+  },
+  "hourly_blacklist": {
+    "description": "间歇屏蔽 QQ 号（每小时限流）",
+    "type": "list",
+    "items": {
+      "type": "string"
+    },
+    "default": [],
+    "hint": "每行一个 QQ 号，只填数字。每小时最多放行下面的条数，超过后拦截到下一个自然小时。"
+  },
+  "hourly_limit": {
+    "description": "间歇屏蔽每小时可接收条数",
+    "type": "int",
+    "default": 5,
+    "slider": {
+      "min": 1,
+      "max": 100,
+      "step": 1
+    },
+    "hint": "只对“间歇屏蔽 QQ 号”生效，默认 5 条/小时。"
+  }
+}

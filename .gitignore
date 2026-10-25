@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+hourly_state.json
+*.log
